@@ -1,0 +1,19 @@
+angular
+ng new projectName
+ng g c compnentname
+ng g m modulename
+ng g m app-routing --flat --module=app
+ng g s servicename
+
+
+
+sts(Spring tool )
+spring 
+spring legacy
+If spring MVC is not there go to COnfigure Templates and  remove gemfire and integration links.
+
+Spring boot
+use spring boot
+select war
+give both package names same
+add 4 types (sql,web,Jpa,rest)

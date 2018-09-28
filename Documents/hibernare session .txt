@@ -1,0 +1,18 @@
+ok ok
+Configuration cfg=new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory sf=cfg.buildSessionFactory();
+		Session session=sf.openSession();
+		Transaction tx=session.beginTransaction();
+		Student student=new Student();
+		student.setName("Amrita");
+		Course course=new Course();
+		course.setCourseName("MBA");
+		session.persist(course);
+		student.setCourse(course);
+		session.persist(student);
+		tx.commit();
+		session.close();
+		System.out.println(student);
+		System.out.println(course); 
+ 

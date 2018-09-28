@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "random message"
+git remote add origin address
+git push origin master;

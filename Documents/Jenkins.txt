@@ -1,0 +1,32 @@
+1.local jenkins setup (https://jenkins.io/doc/book/installing/)
+2.cmd : java -jar jenkins.war --httpPort=8085
+3.password : bc25692676614724b7f42219aeabc516
+4.http://localhost:8085/login?from=%2F
+5.give password
+6.skip installation plugin
+7.Username : root
+Password: Welcome123
+8.Start jenkins
+9.Manage Jenkins -> Manage Plugins
+10.Advanced tab
+Server : 172.17.2.218
+Port : 8085
+Usr name : root
+Pwd : Welcome123
+Test Url : http://www.jenkins-ci.org
+Update Site : https://updates.jenkins-ci.org/update-center.json
+11.Available : 
+Gitlab : GitLab
+GitLab Logo
+GitLab Hook
+ftp : Publish Over Ftp
+maven : Maven Integration
+pipeline : pipeline
+12.manage jenkins
+global tool config
+java 1.8
+add java path..
+server: 172.17.2.218
+13.New Item : Proj name (freestyle proj)
+14.Built triggers -> Buils -> mvn clean install
+15.Configure -> General -> Src code mgr -> Git -> SSH Link
